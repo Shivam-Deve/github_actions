@@ -1,24 +1,20 @@
-# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+                                # This is a comment line
 
-name: Node.js CI
+name: Node.js CI                # Name of your workflow
+on:                             # When event should be triggered
+  push:                         # The name of the GitHub event that triggers the workflow
+    branches: [ master ]        # Triggered only when push event occurs on master branch
 
-on:
-  push:
-    branches: [ master ]
+jobs:                           # Jobs starts from here
+  build:                        # First job named "build"
 
-
-jobs:
-  build:
-
-    runs-on: self-hosted
+    runs-on: self-hosted        # Commputer where building and testing should be done
 
     strategy:
       matrix:
-        node-version: [17.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [17.x]   # node-version for which building and testing should be done
 
-    steps:
+    steps:                     # steps ( in order ) what should be done after what
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
