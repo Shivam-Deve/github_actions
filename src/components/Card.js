@@ -3,8 +3,9 @@ import React from "react";
 class Card extends React.Component {
   constructor(props) {
     super(props);
+    console.log(props)
   }
-  componentDidMount(){
+  componentDidMount() {
     function $(id) {
       return document.getElementById(id);
     }
@@ -39,19 +40,23 @@ class Card extends React.Component {
           <div class="wrap">
             <p>Hey Neha,</p>
             <p>
-              I lost the message inside the card 2 times.. and i realsied i am
-              slow at this :'({" "}
+              You are my escape, you are my hippo, you are my bebo
+              I m lucky to have you in my life
             </p>
             <p>
-              Listen kid, I want you to be the happiest today.. and i suck at
-              making people happy..This is probably the only gift i can give
-              you, my word..
+              Every morning it's you what come to my slow processing mind,
+              Instead of hearing <b>Babu Tu Kya Kar Ra Hai</b>, I want to
+              come to me, grab my hand and say <b>Chal Bahar Pani Puri Kha
+                Kar Ate Hain </b>
+              I have seen alot of dreams with you and now, I want to turn them into reality
             </p>
             <p>
-              I will be there with you in your heart and soul whenever you seek
-              me. I love you.
+              I want you to be the first light in my eyes every morning,
+              I want you to be the last light in my eyes every night
+              I want to travel with you, I want to do <b>We Woo We Woo </b>
+               so that you can say <b>See this guy, number one bullshit guy</b>
             </p>
-            <p>always.</p>
+            <b>Babu Loves You</b>
           </div>
         </div>
 
